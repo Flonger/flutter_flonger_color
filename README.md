@@ -1,14 +1,27 @@
-# flutter_flonger_color
 
-A new Flutter project.
+A color parse package for flutter,it works on iOS and Android.
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+### To get a color
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+
+```dart
+Color color1 = ColorUtil.color('#f2f2f2');
+Color color2 = ColorUtil.color('f2f2f2');
+print(color1 == color2); //true
+
+Color color3 = ColorUtil.color('#a1FF5733');
+Color color4 = ColorUtil.color('a1FF5733');
+print(color3 == color4); //true
+```
+
+### To get a int color
+
+```dart
+//The following is the same
+int colorInt1 = ColorUtil.intColor('#f2f2f2');
+int colorInt2 = ColorUtil.intColor('f2f2f2');
+int colorInt3 = ColorUtil.intColor('#fff2f2f2');
+int colorInt5 = ColorUtil.intColor('fff2f2f2');
+```
